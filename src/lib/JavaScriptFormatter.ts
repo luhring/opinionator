@@ -7,7 +7,8 @@ export class JavaScriptFormatter implements ILanguageSpecificFormatter {
     "div.language-javascript > pre > code",
     "div.highlight-source-js > pre",
     "pre > code.javascript",
-    "pre.javascript > code"
+    "pre.javascript > code",
+    "pre > code.lang-js"
   ];
 
   public readonly languageName: string = "JavaScript";
