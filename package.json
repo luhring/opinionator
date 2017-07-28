@@ -5,9 +5,10 @@
   "main": "content.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bundle": "browserify 'output/typescript/main.js' -o 'output/bundle.js'",
+    "removePemFiles": "node helper_scripts/removePemFilesFromNodeModules.js",
     "build": "tsc",
-    "package": "npm run build && npm run bundle"
+    "bundle": "browserify 'output/typescript/main.js' -o 'output/bundle.js'",
+    "package": "npm run removePemFiles && npm run build && npm run bundle"
   },
   "keywords": [],
   "author": "Dan Luhring",
