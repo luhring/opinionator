@@ -1,0 +1,28 @@
+{
+  "name": "opinionator",
+  "version": "0.1.0",
+  "description": "a Chrome extension that reformats code snippets on web pages to match your formatting opinions",
+  "main": "content.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "browserify 'output/typescript/main.js' -o 'output/bundle.js'",
+    "build": "tsc",
+    "package": "npm run build && npm run bundle"
+  },
+  "keywords": [],
+  "author": "Dan Luhring",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/browserify": "^12.0.32",
+    "@types/highlight.js": "^9.1.9",
+    "@types/jquery": "^3.2.9",
+    "@types/prettier": "^1.5.0",
+    "browserify": "^14.4.0",
+    "highlight.js": "^9.12.0",
+    "prettier": "^1.5.3",
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
