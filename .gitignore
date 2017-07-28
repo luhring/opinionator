@@ -59,3 +59,6 @@ typings/
 
 # building and bundling Output
 output/
+
+# zip files
+*.zip
