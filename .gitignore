@@ -62,3 +62,6 @@ output/
 
 # zip files
 *.zip
+
+# Never commit the Chrome extension private key
+opinionator.pem
